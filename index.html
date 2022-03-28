@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>FORMULIR</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
+        
+    <body>
+       <main>
+            <div class="judul">
+                <h1>Biodata</h1>
+            </div>
+            <div class="formulir">
+                    <a>Nama Lengkap</a>
+                    <input type="text" name="name" id="name" required>
+                    <br>
+                    <a>Tanggal Lahir</a>
+                    <input type="date" name="birth_date" id="birth_date" required>
+                    <br>
+                    <a>Jenis Kelamin</a>
+                    <div class="gender" id="gender">
+                        <input type="radio" name="your_gender" id="laki-laki" value="Laki-laki" required>
+                        <label for="laki-laki">Laki-laki</label>
+                        <input type="radio" name="your_gender" id="perempuan" value="Perempuan" required>
+                        <label for="laki-laki">Perempuan</label>
+                        <input type="radio" name="your_gender" id="other" value="Other" required>
+                        <label for="other">Other</label>
+                    </div>
+                    <br>
+                    <a>Hobi</a>
+                    <div class="hobby" id="hobby">
+                        <input id="chkngoding" type="checkbox" name="hobby" value="Ngoding" >
+                        <label for="chkngoding">Ngoding</label>
+                        <input id="chkmelamun" type="checkbox" name="hobby" value="Melamun" >
+                        <label for="chkmelamun">Melamun</label>
+                        <input id="chkBermimpi" type="checkbox" name="hobby" value="Bermimpi" >
+                        <label for="chkBermimpi">Bermimpi</label>
+                        <input id="chkMengarang" type="checkbox" name="hobby" value="Mengarang" >
+                        <label for="chkMengarang">Mengarang</label>
+                        <input id="chkMainGame" type="checkbox" name="hobby" value="Main Game" >
+                        <label for="chkMainGame">Main Game</label>
+                        <input id="chkOther" type="checkbox" name="hobby" value="Other" >
+                        <label for="chkOther">Other</label>
+                    </div>
+                    <br>
+                    <a>Agama</a>
+                    <input list="religions" name="religion" id="religion" required>
+                    <datalist id="religions">
+                        <option value="Christianity">
+                        <option value="Islam">
+                        <option value="Atheist">
+                        <option value="Hinduism">
+                        <option value="Buddhism">
+                    </datalist>
+                    <br>
+                    <a>Pesan</a>
+                    <textarea name="pesan" id="pesan" cols="30" rows="5" required></textarea>
+                    <br>
+
+                    <button type="submit" class="btn btn-primary" onclick="myFunc()">Submit</button>
+                    <table class="table mt-5" id="table" style="display: none;">
+                        <thead>
+                            <tr>
+                                <th scope="col">Label</th>
+                                <th scope="col">Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Nama</th>
+                                <td id="printName"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Tanggal Lahir</th>
+                                <td id="printBirthD"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Jenis Kelamin</th>
+                                <td id="printGender"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Hobi</th>
+                                <td id="printHobby"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Agama</th>
+                                <td id="printReligion"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Pesan</th>
+                                <td id="printText"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </div>
+            
+       </main>
+       <script src="script.js"></script>
+    </body>
+</html>

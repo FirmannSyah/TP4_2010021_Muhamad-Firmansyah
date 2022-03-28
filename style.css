@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: 'Quicksand';
+}
+body{
+    background-color:azure;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+}
+main{
+    background-color: white;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    margin-top: 30px;
+    width: 900px;
+}
+
+.judul{
+    padding: 20px;
+    text-align: center;
+}
+.formulir{
+    padding: 20px;
+}
+a{
+	font-size: 18px;
+	margin: 20px 0;
+	color: gray;
+}
+
+input{
+
+	font-size: 15px;
+	width: 100%;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	padding: 6px 7px;
+    color: gray;
+	box-sizing: border-box;
+}
+
+
+button {
+	margin-top: 10px;
+	border-radius: 5px;
+	height: 40px;
+	width: 100%;
+	background-color: #0226FD;
+	color: whitesmoke;
+
+}
+
+.gender {
+    margin: 0px 0px 0px;
+    padding-top: 5px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+}
+
+.gender input{
+    margin: 0px 0px 0px;
+    width: auto;
+}
+
+.gender label{
+    padding-left: 5px;
+    padding-right: 15px;
+}
+
+.hobby {
+    margin: 0px 0px 0px;
+    padding-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+
+.hobby input{
+    margin: 0px 0px 0px;
+    width: auto;
+}
+
+.hobby label{
+    padding-left: 5px;
+    padding-right: 15px;
+}
+
+textarea{
+
+	font-size: 15px;
+	width: 100%;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	padding: 6px 7px;
+    color: gray;
+	box-sizing: border-box;
+}
+
+.btn{
+     width: 100px;
+}
